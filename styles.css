@@ -9,6 +9,8 @@
   --text-color: #444950;
   --text-hover-color: #606770;
   --green: #2E8555;
+  --beta-chip-background-color: #bae1ff;
+  --beta-chip-text-color: #262626;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +22,8 @@
     --text-color: #EBEDF0;
     --text-hover-color: #DADDE1;
     --green: #3CAD6E;
+    --beta-chip-background-color: #48b0ff;
+    --beta-chip-text-color: #262626;
   }
 }
 
@@ -116,6 +120,21 @@ header h1 {
 
 .card p {
   margin-top: 0.5rem;
+}
+
+.chip {
+  border-radius: 0.5em;
+  font-size: 0.75em;
+  display: inline-block;
+  padding: 0.125em 0.35em;
+  margin: 0 0.25em;
+  transform: translateY(-0.25rem);
+  text-transform: uppercase;
+}
+
+.chip.beta {
+  background-color: var(--beta-chip-background-color);
+  color: var(--beta-chip-text-color);
 }
 
 .card .external-link {
