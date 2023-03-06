@@ -63,7 +63,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   gap: 32px;
-  max-width: 100ch;
+  max-width: 110ch;
 }
 
 header {
