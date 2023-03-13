@@ -24,6 +24,8 @@
   --button-face-color: #aad9ff;
   --button-edge-color: #91bee3;
   --button-edge-shadow-color: #7da9cd;
+  --text-link-color: #0076d8;
+  --text-link-color-hovered: #1c99ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,6 +48,8 @@
     --button-face-color: #6bb6f3;
     --button-edge-color: #398cd1;
     --button-edge-shadow-color: #206298;
+    --text-link-color: #4aa8f6;
+    --text-link-color-hovered: #65b9fd;
   }
 }
 
@@ -168,6 +172,14 @@ section > h2 {
   font-weight: 300;
   margin-top: -0.25em;
   margin-bottom: calc(var(--spacing) - 0.5em);
+}
+
+section > p > a {
+  color: var(--text-link-color);
+}
+section > p > a:hover {
+  color: var(--text-link-color-hovered);
+  text-decoration: underline;
 }
 
 .overview {
