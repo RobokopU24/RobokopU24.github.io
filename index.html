@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   <title>ROBOKOP</title>
   <link rel="icon" href="./favicon.svg" />
 </head>
@@ -131,7 +132,10 @@
     <!-- Contact -->
     <section>
       <h2>Contact</h2>
-      <form method="POST" action="https://script.google.com/macros/s/AKfycbyeLu9laUkSVhPdpIE4ffsHAdv_hL4omCj61NAs-HcP8MRWLIy9eL6Us8A0TMAHmCSCww/exec">
+
+      <div id="form-response">Your message has been submitted!</div>
+      
+      <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbyeLu9laUkSVhPdpIE4ffsHAdv_hL4omCj61NAs-HcP8MRWLIy9eL6Us8A0TMAHmCSCww/exec">
 
         <div class="name-email-group">
           <div class="input-group">
@@ -156,7 +160,7 @@
         </div>
         
         <div class="submit-button-wrapper">
-          <button class="pushable" type="submit">
+          <button id="form-submit-button" class="pushable" type="submit">
             <span class="shadow" aria-hidden="true"></span>
             <span class="edge" aria-hidden="true"></span>
             <span class="front" aria-hidden="true">
@@ -165,6 +169,7 @@
             </span>
           </button>
         </div>
+
       </form>
     </section>
     

@@ -26,6 +26,8 @@
   --button-edge-shadow-color: #7da9cd;
   --text-link-color: #0076d8;
   --text-link-color-hovered: #1c99ff;
+  --form-response-background-color: #00fd0038;
+  --form-response-border-color: #009d0088;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,6 +52,8 @@
     --button-edge-shadow-color: #206298;
     --text-link-color: #4aa8f6;
     --text-link-color-hovered: #65b9fd;
+    --form-response-background-color: #00ff511b;
+    --form-response-border-color: #00ff5185;
   }
 }
 
@@ -329,6 +333,14 @@ form {
   gap: 40px;
 }
 
+#form-response {
+  display: none;
+  background-color: var(--form-response-background-color);
+  padding: 16px 16px;
+  border-left: 3px solid var(--form-response-border-color);
+  border-radius: 0 10px 10px 0;
+}
+
 /* Button styles */
 .submit-button-wrapper {
   display: flex;
@@ -353,6 +365,9 @@ form {
   border-radius: var(--radius);
   outline-offset: 6px;
   transition: filter 250ms;
+}
+.submit-button-wrapper .pushable:disabled {
+  filter: grayscale();
 }
 .submit-button-wrapper .shadow {
   position: absolute;
@@ -403,27 +418,27 @@ form {
   transform: scale(1.5) translateX(4px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
-.submit-button-wrapper .pushable:hover {
+.submit-button-wrapper .pushable:hover:not(:disabled) {
   filter: brightness(105%);
   transition: filter 250ms;
 }
-.submit-button-wrapper .pushable:hover .front {
+.submit-button-wrapper .pushable:hover:not(:disabled) .front {
   transform: translateY(calc(-1 * (var(--height) + var(--hover-rise))));
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-.submit-button-wrapper .pushable:hover .front svg {
+.submit-button-wrapper .pushable:hover:not(:disabled) .front svg {
   transform: scale(1.5) translateX(6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
-.submit-button-wrapper .pushable:active .front {
+.submit-button-wrapper .pushable:active:not(:disabled) .front {
   transform: translateY(calc(-1 * var(--bottom-out-height)));
   transition: transform 34ms;
 }
-.submit-button-wrapper .pushable:hover .shadow {
+.submit-button-wrapper .pushable:hover:not(:disabled) .shadow {
   transform: translateY(calc((var(--height) + var(--hover-rise))));
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-.submit-button-wrapper .pushable:active .shadow {
+.submit-button-wrapper .pushable:active:not(:disabled) .shadow {
   transform: translateY(var(--bottom-out-height));
   transition: transform 34ms;
 }
