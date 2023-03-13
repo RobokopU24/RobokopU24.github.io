@@ -188,8 +188,11 @@ section > p > a:hover {
   gap: var(--spacing);
 }
 
-.overview .logo {
-  /* max-width: 450px; */
+.overview .logo-wrapper {
+  max-width: 450px;
+}
+.overview .logo-wrapper .logo {
+  width: 100%;
 }
 
 .overview p {
