@@ -7,69 +7,180 @@
   <meta name="description" content="Robokop">
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   <title>ROBOKOP</title>
-  <link rel="icon" href="./favicon.ico" />
+  <link rel="icon" href="./favicon.svg" />
 </head>
 
 <body>
   <main>
-    <div class="wrapper">
-      <header>
-        <h1>ROBOKOP</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi fugiat tempora odio dolor
-          necessitatibus.</p>
-      </header>
+    <!-- Overview section -->
+    <section class="overview">
+      <div class="logo-wrapper"><img src="./robokop-logo.svg" class="logo" alt="ROBOKOP" draggable="false" /></div>
+      <p>ROBOKOP is an open-source, knowledge graph–based biomedical question-answering system that derives answers to user questions by applying reasoning algorithms to integrated and semantically harmonized biomedical data sources and scoring/ranking results.</p>
+    </section>
+    
+    <!-- Project link buttons -->
+    <section class="project-button-wrapper">
       <a class="card" href="https://robokop.renci.org/" target="_blank">
         <article>
-          <h2>ROBOKOP</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <g class="external-link-arrow">
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </g>
-          </svg>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, numquam.</p>
+          <div class="card-header">
+            <h2>ROBOKOP</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <g class="external-link-arrow">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </g>
+            </svg>
+          </div>
+          <hr />
+          <p>ROBOKOP helps researchers explore and derive insights from a biomedical knowledge graph by providing a user-friendly interface that supports the exploration of answer subgraphs and associated provenance and publication support.</p>
         </article>
       </a>
-      <a class="card" href="https://www.exemplar.mml.unc.edu/" target="_blank">
-        <article>
-          <h2>ExEmPLAR <span class="chip beta">beta</span></h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <g class="external-link-arrow">
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </g>
-          </svg>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, nesciunt.</p>
-        </article>
-      </a>
+
       <a class="card" href="https://robokopu24.github.io/api-docs/" target="_blank">
         <article>
-          <h2>API Documentation</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <g class="external-link-arrow">
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </g>
-          </svg>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</p>
+          <div class="card-header">
+            <h2>Automat API Docs</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <g class="external-link-arrow">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </g>
+            </svg>
+          </div>
+          <hr />
+          <p>The documentation site for Automat's API provides information on how to access and use the different knowledge sources available through the Automat service</p>
         </article>
       </a>
-    </div>
+    </section>
+    
+    <!-- Additional tools -->
+    <section>
+      <h2>Additional Tools</h2>
+      <div class="additional-tools-button-wrapper">
+        <a class="card" href="#" target="_blank">
+          <article>
+            <div class="card-header">
+              <h2>Aragorn</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <g class="external-link-arrow">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </g>
+              </svg>
+            </div>
+            <hr />
+            <p>A Translator ARA that points to the Automat KPs and SmartAPI registry.</p>
+          </article>
+        </a>
+        <a class="card" href="http://robokopkg.renci.org/" target="_blank">
+          <article>
+            <div class="card-header">
+              <h2>ROBOKOP KG</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <g class="external-link-arrow">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </g>
+              </svg>
+            </div>
+            <hr />
+            <p>Query the ROBOKOP knowledge graph directly in the Neo4j browser.</p>
+          </article>
+        </a>
+        <a class="card" href="https://www.exemplar.mml.unc.edu/" target="_blank">
+          <article>
+            <div class="card-header">
+              <h2>ExEmPLAR</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <g class="external-link-arrow">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </g>
+              </svg>
+            </div>
+            <hr />
+            <p>Web interface to ExEmplar, which is a generic query tool to support Cypher queries of Neo4j databases, including the ROBOKOP KG.</p>
+            <div class="warning-card">
+              <p>This application is not maintained by XYZ. Although some users may find it useful, support is not guaranteed.</p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <!-- Funding -->
+    <section>
+      <h2>Funding</h2>
+      <p>ROBOKOP is a joint creation of the <a href="https://renci.org" target="_blank">Renaissance Computing Institute (RENCI)</a> at the <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill</a> and <a href="https://covar.com/" target="_blank">CoVar Applied Technologies</a>. The prototype was developed with funding from the <a href="https://ncats.nih.gov/" target="_blank">National Center for Advancing Translational Science</a>, National Institutes of Health (award <a href="https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=OT2TR002514&arg_ProgOfficeCode=264" target="_blank">#OT2TR002514</a>). ROBOKOP's continued development is supported with joint funding from the <a href="https://www.niehs.nih.gov/">Office of Data Science Strategy</a> within the <a href="https://www.nih.gov/" target="_blank">Institutes of Health</a> (award <a href="https://tools.niehs.nih.gov/portfolio/index.cfm?do=portfolio.grantDetail&grant_number=U24ES035214" target="_blank">#U24ES035214</a>).</p>
+    </section>
+    
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+
+      <div id="form-response">Your message has been submitted!</div>
+
+      <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbzt8EPX3ynJ78CLAcJHWPzbXAEpyBeC2ssXLEwu7u7weZ4wEU5iLpCiUjp07EOwMs-xjw/exec">
+
+        <div class="name-email-group">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input name="Name" id="name" type="text" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input name="Email" id="email" type="email" required>
+          </div>
+        </div>
+        
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input name="Subject" id="subject" type="subject" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea name="Message" id="message" rows="10" required></textarea>
+        </div>
+        
+        <div class="submit-button-wrapper">
+          <button id="form-submit-button" class="pushable" type="submit">
+            <span class="shadow" aria-hidden="true"></span>
+            <span class="edge" aria-hidden="true"></span>
+            <span class="front" aria-hidden="true">
+              Send
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3.5 17.9V6.1q0-.5.413-.75.412-.25.862-.075l13.95 5.875q.55.25.55.85t-.55.85l-13.95 5.875q-.45.175-.862-.075-.413-.25-.413-.75ZM5 17l11.85-5L5 7v3.7l5.425 1.3L5 13.3Zm0-5V7v10Z"/></svg>
+            </span>
+          </button>
+        </div>
+
+      </form>
+    </section>
+    
+    <!-- dotted line dividers -->
+    <span class="divider vert" aria-hidden="true"></span>
+    <span class="divider horiz" aria-hidden="true"></span>
+    <span class="divider horiz" aria-hidden="true"></span>
+    <span class="divider horiz" aria-hidden="true"></span>
+    <span class="divider horiz" aria-hidden="true"></span>
+    <span class="divider horiz" aria-hidden="true"></span>
   </main>
-  <footer>
-    <ul>
-      <li><a href="#">lorem</a></li>
-      <li><a href="#">ipsum</a></li>
-      <li><a href="#">dolor</a></li>
-    </ul>
-  </footer>
 </body>
 
 </html>
