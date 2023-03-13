@@ -10,6 +10,9 @@
   --divider-color: rgba(0 0 0 / 0.4);
   --card-background-color: #ffffff;
   --card-border-color: #ebedf0;
+  --scrollbar-color: #cccccc;
+  --scrollbar-hover-color: #bebebe;
+  --scrollbar-active-color: #9f9f9f;
   --heading-color: #1c1e21;
   --text-color: #444950;
   --text-hover-color: #606770;
@@ -25,6 +28,9 @@
     --divider-color: #444950;
     --card-background-color: #242526;
     --card-border-color: #444950;
+    --scrollbar-color: #444950;
+    --scrollbar-hover-color: #585e68;
+    --scrollbar-active-color: #616872;
     --heading-color: #e3e3e3;
     --text-color: #ebedf0;
     --text-hover-color: #dadde1;
@@ -45,6 +51,25 @@
   .name-email-group {
     flex-direction: column;
   }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-hover-color);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-active-color);
 }
 
 html {
