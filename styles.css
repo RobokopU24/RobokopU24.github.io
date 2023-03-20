@@ -16,7 +16,7 @@
   --heading-color: #1c1e21;
   --text-color: #444950;
   --text-hover-color: #606770;
-  --text-faded-color: #B8B8B8;
+  --text-faded-color: #505050;
   --green: #2e8555;
   --blue: #4aa8f6;
   --warning-background-color: #fff4e5;
@@ -43,6 +43,7 @@
     --heading-color: #e3e3e3;
     --text-color: #ebedf0;
     --text-hover-color: #dadde1;
+    --text-faded-color: #B8B8B8;
     --green: #3cad6e;
     --blue: #6bb6f3;
     --warning-background-color: #3B3326;
