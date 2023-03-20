@@ -6,6 +6,9 @@
   --spacing-2: 1.5rem;
   --spacing-3: 1rem;
 
+  --first-gradient: linear-gradient(180deg, #9d7afe 0%, #5baaff 100%);
+  --second-gradient: linear-gradient(180deg, #af71ff 0%, #dc89f8 100%);
+
   --background-color: #ffffff;
   --divider-color: rgba(0 0 0 / 0.4);
   --card-background-color: #ffffff;
@@ -33,6 +36,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --first-gradient: linear-gradient(180deg, #8358F6 0%, #3B90ED 100%);
+    --second-gradient: linear-gradient(180deg, #964FF0 0%, #CB6FEB 100%);
+    
     --background-color: #1b1b1d;
     --divider-color: #444950;
     --card-background-color: #242526;
@@ -223,6 +229,35 @@ section a:not(.card):hover {
 .overview .robokop-intro {
   font-size: 1.15rem;
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.card.gradient-card:first-of-type {
+  background: var(--first-gradient);
+}
+.card.gradient-card:last-of-type {
+  background: var(--second-gradient);
+}
+.card.gradient-card {
+  color: white;
+}
+.card.gradient-card .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.card.gradient-card .card-header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.card.gradient-card:hover .external-link {
+  stroke: white;
+}
+.card.gradient-card .external-link {
+  stroke: white;
 }
 
 .project-button-wrapper,
