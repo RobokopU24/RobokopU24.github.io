@@ -179,10 +179,10 @@ section > h2 {
   margin-bottom: calc(var(--spacing) - 0.5em);
 }
 
-section > p > a {
+section a:not(.card) {
   color: var(--text-link-color);
 }
-section > p > a:hover {
+section a:not(.card):hover {
   color: var(--text-link-color-hovered);
   text-decoration: underline;
 }
@@ -223,6 +223,13 @@ section > p > a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing);
+}
+
+.citations {
+  padding-left: 1em;
+}
+.citations li {
+  padding-left: 1ch;
 }
 
 .card {
