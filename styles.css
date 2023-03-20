@@ -16,6 +16,7 @@
   --heading-color: #1c1e21;
   --text-color: #444950;
   --text-hover-color: #606770;
+  --text-faded-color: #B8B8B8;
   --green: #2e8555;
   --blue: #4aa8f6;
   --warning-background-color: #fff4e5;
@@ -189,7 +190,7 @@ section > p > a:hover {
 .overview {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing);
+  gap: calc(var(--spacing) / 2);
 }
 
 .overview .logo-wrapper {
@@ -199,9 +200,21 @@ section > p > a:hover {
   width: 100%;
 }
 
-.overview p {
-  font-size: 1.2rem;
-  font-size: clamp(1.2rem, 1.14rem + 0.3vw, 1.5rem);
+.overview .acronym-explainer {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-faded-color);
+}
+
+.overview .acronym-explainer .large-letter {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.overview .robokop-intro {
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
