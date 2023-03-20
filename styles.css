@@ -6,6 +6,9 @@
   --spacing-2: 1.5rem;
   --spacing-3: 1rem;
 
+  --first-gradient: linear-gradient(180deg, #9d7afe 0%, #5baaff 100%);
+  --second-gradient: linear-gradient(180deg, #af71ff 0%, #dc89f8 100%);
+
   --background-color: #ffffff;
   --divider-color: rgba(0 0 0 / 0.4);
   --card-background-color: #ffffff;
@@ -16,6 +19,7 @@
   --heading-color: #1c1e21;
   --text-color: #444950;
   --text-hover-color: #606770;
+  --text-faded-color: #505050;
   --green: #2e8555;
   --blue: #4aa8f6;
   --warning-background-color: #fff4e5;
@@ -32,6 +36,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --first-gradient: linear-gradient(180deg, #8358F6 0%, #3B90ED 100%);
+    --second-gradient: linear-gradient(180deg, #964FF0 0%, #CB6FEB 100%);
+    
     --background-color: #1b1b1d;
     --divider-color: #444950;
     --card-background-color: #242526;
@@ -42,6 +49,7 @@
     --heading-color: #e3e3e3;
     --text-color: #ebedf0;
     --text-hover-color: #dadde1;
+    --text-faded-color: #B8B8B8;
     --green: #3cad6e;
     --blue: #6bb6f3;
     --warning-background-color: #3B3326;
@@ -117,7 +125,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: auto [divider-start] 1px [divider-end content-start] minmax(min-content, 850px) [content-end] auto;
-  grid-template-rows: 10vh repeat(5, 1px min-content) auto;
+  grid-template-rows: 10vh repeat(6, 1px min-content) auto;
 }
 
 .divider {
@@ -149,6 +157,9 @@ main {
 .divider.horiz:nth-of-type(6) {
   grid-row: 10 / span 1; 
 }
+.divider.horiz:nth-of-type(7) {
+  grid-row: 12 / span 1; 
+}
 
 section {
   padding: var(--spacing);
@@ -169,6 +180,9 @@ section:nth-of-type(4) {
 section:nth-of-type(5) {
   grid-row: 11 / span 1;
 }
+section:nth-of-type(6) {
+  grid-row: 13 / span 1;
+}
 
 section > h2 {
   font-size: 1.75rem;
@@ -178,10 +192,10 @@ section > h2 {
   margin-bottom: calc(var(--spacing) - 0.5em);
 }
 
-section > p > a {
+section a:not(.card) {
   color: var(--text-link-color);
 }
-section > p > a:hover {
+section a:not(.card):hover {
   color: var(--text-link-color-hovered);
   text-decoration: underline;
 }
@@ -189,7 +203,7 @@ section > p > a:hover {
 .overview {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing);
+  gap: calc(var(--spacing) / 2);
 }
 
 .overview .logo-wrapper {
@@ -199,10 +213,51 @@ section > p > a:hover {
   width: 100%;
 }
 
-.overview p {
-  font-size: 1.2rem;
-  font-size: clamp(1.2rem, 1.14rem + 0.3vw, 1.5rem);
+.overview .acronym-explainer {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-faded-color);
+}
+
+.overview .acronym-explainer .large-letter {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.overview .robokop-intro {
+  font-size: 1.15rem;
   font-weight: 300;
+  margin-bottom: calc(var(--spacing) / 2);
+}
+
+.card.gradient-card:first-of-type {
+  background: var(--first-gradient);
+}
+.card.gradient-card:last-of-type {
+  background: var(--second-gradient);
+}
+.card.gradient-card {
+  color: white;
+}
+.card.gradient-card .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.card.gradient-card .card-header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.card.gradient-card:hover .external-link {
+  stroke: white;
+}
+.card.gradient-card .external-link {
+  stroke: white;
 }
 
 .project-button-wrapper,
@@ -210,6 +265,13 @@ section > p > a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing);
+}
+
+.citations {
+  padding-left: 1em;
+}
+.citations li {
+  padding-left: 1ch;
 }
 
 .card {

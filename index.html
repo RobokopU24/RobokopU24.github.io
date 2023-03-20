@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
   <title>ROBOKOP</title>
   <link rel="icon" href="./favicon.svg" />
@@ -20,56 +20,21 @@
     <!-- Overview section -->
     <section class="overview">
       <div class="logo-wrapper"><img src="./robokop-logo.svg" class="logo" alt="ROBOKOP" draggable="false" /></div>
-      <p>ROBOKOP is an open-source, knowledge graph–based biomedical question-answering system that derives answers to user questions by applying reasoning algorithms to integrated and semantically harmonized biomedical data sources and scoring/ranking results.</p>
-    </section>
-    
-    <!-- Project link buttons -->
-    <section class="project-button-wrapper">
-      <a class="card" href="https://robokop.renci.org/" target="_blank">
-        <article>
-          <div class="card-header">
-            <h2>ROBOKOP</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <g class="external-link-arrow">
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </g>
-            </svg>
-          </div>
-          <hr />
-          <p>ROBOKOP helps researchers explore and derive insights from a biomedical knowledge graph by providing a user-friendly interface that supports the exploration of answer subgraphs and associated provenance and publication support.</p>
-        </article>
-      </a>
+      <p class="acronym-explainer"><span class="large-letter">r</span>easoning <span class="large-letter">o</span>ver <span class="large-letter">b</span>iomedical <span class="large-letter">o</span>bjects linked in <span class="large-letter">k</span>nowledge <span class="large-letter">o</span>riented <span class="large-letter">p</span>athways</p>
+      <p class="robokop-intro">ROBOKOP is an open-source biomedical knowledge graph that integrates and semantically harmonizes important knowledge sources. ROBOKOP contains tens of millions of nodes representing entities such as genes, chemicals, and diseases, and hundreds of millions of edges representing the relationships between them. Here, users can query this integrated knowledge to explain connections between biomedical entities, and use the underlying integrated knowledge to rapidly deploy their own informatics tools.</p>
 
-      <a class="card" href="https://robokopu24.github.io/api-docs/" target="_blank">
-        <article>
-          <div class="card-header">
-            <h2>Automat API Docs</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <g class="external-link-arrow">
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </g>
-            </svg>
-          </div>
-          <hr />
-          <p>The documentation site for Automat's API provides information on how to access and use the different knowledge sources available through the Automat service</p>
-        </article>
-      </a>
-    </section>
-    
-    <!-- Additional tools -->
-    <section>
-      <h2>Additional Tools</h2>
-      <div class="additional-tools-button-wrapper">
-        <a class="card" href="#" target="_blank">
+      <div class="project-button-wrapper">
+        <a class="card gradient-card" href="https://robokop.renci.org/" target="_blank">
           <article>
+            <div class="icon-wrapper">
+              <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00806 96.2074L35.9277 65.2877" stroke="white" stroke-width="10" stroke-linecap="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.9569 32.6394C75.1896 35.5807 71.3726 36.5323 68.4314 34.7651C67.3239 34.0996 66.4985 33.1436 65.9941 32.0531L56.7224 33.437C56.6632 34.4011 56.3776 35.3656 55.8457 36.2508C55.1919 37.339 54.2574 38.1549 53.1905 38.6615L56.2658 47.3408C57.6425 47.1346 59.0963 47.3875 60.3827 48.1604C63.3239 49.9277 64.2756 53.7447 62.5083 56.6859C60.7411 59.6271 56.924 60.5788 53.9828 58.8116C51.0416 57.0443 50.0899 53.2273 51.8572 50.286C52.2407 49.6477 52.7208 49.1031 53.2675 48.6596L49.9289 39.2371C49.0335 39.1522 48.1426 38.8706 47.3202 38.3765C44.379 36.6092 43.4273 32.7922 45.1946 29.8509C46.9618 26.9097 50.7788 25.958 53.7201 27.7253C54.758 28.3489 55.5481 29.2278 56.0585 30.2333L65.4466 28.832C65.5334 27.9421 65.8145 27.057 66.3057 26.2395C68.073 23.2983 71.89 22.3466 74.8312 24.1139C77.7725 25.8812 78.7242 29.6982 76.9569 32.6394Z" fill="white"/>
+                <circle cx="61.3753" cy="39.8403" r="34.6917" stroke="white" stroke-width="10"/>
+              </svg>
+            </div>            
             <div class="card-header">
-              <h2>Aragorn</h2>
+              <h2>Ask a question</h2>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -79,10 +44,42 @@
                 </g>
               </svg>
             </div>
-            <hr />
-            <p>A Translator ARA that points to the Automat KPs and SmartAPI registry.</p>
+            <p>Use the ROBOKOP Question Builder to construct a new query, then use the visualization tool to explore relevant publications.</p>
           </article>
         </a>
+  
+        <a class="card gradient-card" href="https://robokopu24.github.io/api-docs/docs/category/automat" target="_blank">
+          <article>
+            <div class="icon-wrapper">
+              <svg width="134" height="80" viewBox="0 0 134 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.2605 79.6547C16.8285 79.6547 11.6125 74.4387 11.6125 64.0067V50.608C11.6125 46.704 9.69254 44.752 5.85254 44.752C4.44454 44.752 3.26054 44.304 2.30054 43.408C1.40454 42.512 0.956543 41.36 0.956543 39.952C0.956543 38.48 1.40454 37.296 2.30054 36.4C3.26054 35.504 4.44454 35.056 5.85254 35.056C9.69254 35.056 11.6125 33.104 11.6125 29.2V15.6955C11.6125 5.26348 16.8285 0.0474854 27.2605 0.0474854C28.6685 0.0474854 29.8205 0.527485 30.7165 1.48748C31.6125 2.44748 32.0605 3.63148 32.0605 5.03949C32.0605 6.44749 31.6125 7.59949 30.7165 8.49549C29.8205 9.39149 28.6685 9.83949 27.2605 9.83949C23.3565 9.83949 21.4045 11.7915 21.4045 15.6955V29.2C21.4045 31.44 21.1485 33.456 20.6365 35.248C20.1245 37.04 19.3565 38.608 18.3325 39.952C20.3805 42.576 21.4045 46.128 21.4045 50.608V64.0067C21.4045 67.9107 23.3565 69.8627 27.2605 69.8627C28.6685 69.8627 29.8205 70.3107 30.7165 71.2067C31.6125 72.1027 32.0605 73.2867 32.0605 74.7587C32.0605 76.1667 31.6125 77.3187 30.7165 78.2147C29.8205 79.1747 28.6685 79.6547 27.2605 79.6547Z" fill="white"/>
+                <path d="M46.4245 67.696C44.6325 67.696 43.0645 67.056 41.7205 65.776C40.4405 64.432 39.8005 62.864 39.8005 61.072C39.8005 59.216 40.4405 57.648 41.7205 56.368C43.0645 55.024 44.6325 54.352 46.4245 54.352C48.2805 54.352 49.8485 55.024 51.1285 56.368C52.4085 57.648 53.0485 59.216 53.0485 61.072C53.0485 62.864 52.4085 64.432 51.1285 65.776C49.8485 67.056 48.2805 67.696 46.4245 67.696Z" fill="white"/>
+                <path d="M69.2995 67.696C67.5075 67.696 65.9395 67.056 64.5955 65.776C63.3155 64.432 62.6755 62.864 62.6755 61.072C62.6755 59.216 63.3155 57.648 64.5955 56.368C65.9395 55.024 67.5075 54.352 69.2995 54.352C71.1555 54.352 72.7235 55.024 74.0035 56.368C75.2835 57.648 75.9235 59.216 75.9235 61.072C75.9235 62.864 75.2835 64.432 74.0035 65.776C72.7235 67.056 71.1555 67.696 69.2995 67.696Z" fill="white"/>
+                <path d="M92.1745 67.696C90.3825 67.696 88.8145 67.056 87.4705 65.776C86.1905 64.432 85.5505 62.864 85.5505 61.072C85.5505 59.216 86.1905 57.648 87.4705 56.368C88.8145 55.024 90.3825 54.352 92.1745 54.352C94.0305 54.352 95.5985 55.024 96.8785 56.368C98.1585 57.648 98.7985 59.216 98.7985 61.072C98.7985 62.864 98.1585 64.432 96.8785 65.776C95.5985 67.056 94.0305 67.696 92.1745 67.696Z" fill="white"/>
+                <path d="M107.287 79.6547C117.719 79.6547 122.935 74.4387 122.935 64.0067V50.608C122.935 46.704 124.855 44.752 128.695 44.752C130.103 44.752 131.287 44.304 132.247 43.408C133.143 42.512 133.591 41.36 133.591 39.952C133.591 38.48 133.143 37.296 132.247 36.4C131.287 35.504 130.103 35.056 128.695 35.056C124.855 35.056 122.935 33.104 122.935 29.2V15.6955C122.935 5.26348 117.719 0.0474854 107.287 0.0474854C105.879 0.0474854 104.727 0.527485 103.831 1.48748C102.935 2.44748 102.487 3.63148 102.487 5.03949C102.487 6.44749 102.935 7.59949 103.831 8.49549C104.727 9.39149 105.879 9.83949 107.287 9.83949C111.191 9.83949 113.143 11.7915 113.143 15.6955V29.2C113.143 31.44 113.399 33.456 113.911 35.248C114.423 37.04 115.191 38.608 116.215 39.952C114.167 42.576 113.143 46.128 113.143 50.608V64.0067C113.143 67.9107 111.191 69.8627 107.287 69.8627C105.879 69.8627 104.727 70.3107 103.831 71.2067C102.935 72.1027 102.487 73.2867 102.487 74.7587C102.487 76.1667 102.935 77.3187 103.831 78.2147C104.727 79.1747 105.879 79.6547 107.287 79.6547Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="card-header">
+              <h2>Explore the data</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <g class="external-link-arrow">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </g>
+              </svg>
+            </div>
+            <p>Learn about the data in ROBOKOP and how to access it programmatically using the Automat API.</p>
+          </article>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Additional tools -->
+    <section>
+      <h2>Additional Tools</h2>
+      <div class="additional-tools-button-wrapper">
         <a class="card" href="http://robokopkg.renci.org/" target="_blank">
           <article>
             <div class="card-header">
@@ -97,7 +94,7 @@
               </svg>
             </div>
             <hr />
-            <p>Query the ROBOKOP knowledge graph directly in the Neo4j browser.</p>
+            <p>ROBOKOP KG is an open-source biomedical knowledge graph containing ~10M nodes and ~250M edges drawn from ~30 biological data sources and bio-ontologies. Query the ROBOKOP KG directly in the Neo4j browser.</p>
           </article>
         </a>
         <a class="card" href="https://www.exemplar.mml.unc.edu/" target="_blank">
@@ -114,19 +111,35 @@
               </svg>
             </div>
             <hr />
-            <p>Web interface to ExEmplar, which is a generic query tool to support Cypher queries of Neo4j databases, including the ROBOKOP KG.</p>
+            <p>ExEmplar is a generic Neo4j query-and-answer exploration tool that supports queries of the ROBOKOP KG and other Neo4j databases.</p>
             <div class="warning-card">
-              <p>This application is not maintained by XYZ. Although some users may find it useful, support is not guaranteed.</p>
+              <p>ExEmplar is under development and should be considered an experimental alternative to the ROBOKOP UI.</p>
             </div>
           </article>
         </a>
       </div>
     </section>
 
+    <!-- Citations -->
+    <section>
+      <h2>Citations</h2>
+      <p>If you use ROBOKOP in your work, please cite the following papers:</p>
+      <ol class="citations">
+        <li>Bizon C, Cox S, Balhoff J, Kebede Y, Wang P, Morton K, Fecho K, Tropsha A. ROBOKOP KG and KGB: integrated knowledge graphs from federated sources. J Chem Inf Model 2019 Dec 23;59(12):4968–4973. doi: 10.1021/acs.jcim.9b00683. <a href="https://pubmed.ncbi.nlm.nih.gov/31769676/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/31769676/</a>.</li>
+        <li>Morton K, Wang P, Bizon C, Cox S, Balhoff J, Kebede Y, Fecho K, Tropsha A. ROBOKOP: an abstraction layer and user interface for knowledge graphs to support question answering. Bioinformatics 2019;pii:btz604. doi: 10.1093/bioinformatics/btz604. <a href="https://pubmed.ncbi.nlm.nih.gov/31410449/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/31410449/</a>.</li>
+      </ol>
+    </section>
+
     <!-- Funding -->
     <section>
       <h2>Funding</h2>
-      <p>ROBOKOP is a joint creation of the <a href="https://renci.org" target="_blank">Renaissance Computing Institute (RENCI)</a> at the <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill</a> and <a href="https://covar.com/" target="_blank">CoVar Applied Technologies</a>. The prototype was developed with funding from the <a href="https://ncats.nih.gov/" target="_blank">National Center for Advancing Translational Science</a>, National Institutes of Health (award <a href="https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=OT2TR002514&arg_ProgOfficeCode=264" target="_blank">#OT2TR002514</a>). ROBOKOP's continued development is supported with joint funding from the <a href="https://www.niehs.nih.gov/">Office of Data Science Strategy</a> within the <a href="https://www.nih.gov/" target="_blank">Institutes of Health</a> (award <a href="https://tools.niehs.nih.gov/portfolio/index.cfm?do=portfolio.grantDetail&grant_number=U24ES035214" target="_blank">#U24ES035214</a>).</p>
+      <p>ROBOKOP is a joint creation of the <a href="https://renci.org" target="_blank">Renaissance Computing Institute (RENCI)</a> at the <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill</a> and <a href="https://covar.com/" target="_blank">CoVar LLC</a>. The prototype was developed with funding from the <a href="https://ncats.nih.gov/" target="_blank">National Center for Advancing Translational Science</a>, National Institutes of Health (award <a href="https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=OT2TR002514&arg_ProgOfficeCode=264" target="_blank">#OT2TR002514</a>). ROBOKOP's continued development is supported with joint funding from the <a href="https://www.niehs.nih.gov/" target="_blank">National Institute of Environmental Health Sciences</a> and the <a href="https://datascience.nih.gov/about/odss" target="_blank">Office of Data Science Strategy</a> within the <a href="https://www.nih.gov/" target="_blank">Institutes of Health</a> (award <a href="https://tools.niehs.nih.gov/portfolio/index.cfm?do=portfolio.grantDetail&grant_number=U24ES035214" target="_blank">#U24ES035214</a>). ExEmPLAR is funded by XXX</p>
+    </section>
+
+    <!-- License -->
+    <section>
+      <h2>License</h2>
+      <p>ROBOKOP is available under the <a href="https://opensource.org/license/mit/" target="_blank">MIT license</a>.</p>
     </section>
     
     <!-- Contact -->
@@ -175,6 +188,7 @@
     
     <!-- dotted line dividers -->
     <span class="divider vert" aria-hidden="true"></span>
+    <span class="divider horiz" aria-hidden="true"></span>
     <span class="divider horiz" aria-hidden="true"></span>
     <span class="divider horiz" aria-hidden="true"></span>
     <span class="divider horiz" aria-hidden="true"></span>
