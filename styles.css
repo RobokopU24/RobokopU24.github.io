@@ -229,7 +229,7 @@ section a:not(.card):hover {
 .overview .robokop-intro {
   font-size: 1.15rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: calc(var(--spacing) / 2);
 }
 
 .card.gradient-card:first-of-type {
