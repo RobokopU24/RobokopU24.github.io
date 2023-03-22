@@ -24,6 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcMQR4lAAAAAB5Ilnu7XYiXyb3uY7mHh44fhBk0"></script>
   <title>ROBOKOP</title>
   <link rel="icon" href="./favicon.svg" />
 </head>
@@ -161,8 +162,10 @@
 
       <div id="form-response">Your message has been submitted!</div>
 
-      <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbzt8EPX3ynJ78CLAcJHWPzbXAEpyBeC2ssXLEwu7u7weZ4wEU5iLpCiUjp07EOwMs-xjw/exec">
+      <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbzUAQq0_OJPaqJM15PrfBxW3_pVBHcIdh2BTO-ZlUnPd_6Z3E5gNP3vj6Ih2ht3Xb5rKg/exec">
 
+        <input type="hidden" name="token" id="token">
+        
         <div class="name-email-group">
           <div class="input-group">
             <label for="name">Name</label>
