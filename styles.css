@@ -261,6 +261,10 @@ section a:not(.card):hover {
 .citations li {
   padding-left: 1ch;
 }
+/* break long links in citation */
+.citations a {
+  word-break: break-all;
+}
 
 .card {
   background-color: var(--card-background-color);
