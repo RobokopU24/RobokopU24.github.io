@@ -516,7 +516,7 @@ form {
 
 @media (max-width: 850px) {
   :root {
-    --spacing: 2rem;
+    --spacing: 1.5rem;
     --spacing-2: 0.5rem;
     --spacing-3: 0.5rem;
   }
