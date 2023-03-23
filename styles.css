@@ -65,18 +65,6 @@
   }
 }
 
-@media (max-width: 850px) {
-  :root {
-    --spacing: 2rem;
-    --spacing-2: 0.5rem;
-    --spacing-3: 0.5rem;
-  }
-
-  .name-email-group {
-    flex-direction: column;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 15px;
   height: 15px;
@@ -517,4 +505,22 @@ form {
   color: var(--text-faded-color);
   font-size: 0.85rem;
   padding: 0 16px;
+}
+
+@media (max-width: 850px) {
+  :root {
+    --spacing: 2rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.5rem;
+  }
+
+  .name-email-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 696px) {
+  .card.gradient-card .icon-wrapper {
+    display: none;
+  }
 }
