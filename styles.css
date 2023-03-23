@@ -200,6 +200,9 @@ section a:not(.card):hover {
 .overview .logo-wrapper .logo {
   width: 100%;
 }
+.overview .logo-wrapper .logo .logo-letters path {
+  fill: var(--heading-color);
+}
 
 .overview .acronym-explainer {
   font-size: 1.25rem;
