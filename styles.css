@@ -406,6 +406,7 @@ form {
 /* Button styles */
 .submit-button-wrapper {
   display: flex;
+  align-items: flex-start;
 }
 .submit-button-wrapper .pushable {
   --accent-light: var(--button-face-color);
@@ -506,4 +507,14 @@ form {
 }
 .submit-button-wrapper .pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+.grecaptcha-badge { 
+  visibility: hidden;
+}
+
+.recaptcha-disclaimer {
+  color: var(--text-faded-color);
+  font-size: 0.85rem;
+  padding: 0 16px;
 }
