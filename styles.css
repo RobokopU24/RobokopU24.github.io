@@ -65,18 +65,6 @@
   }
 }
 
-@media (max-width: 850px) {
-  :root {
-    --spacing: 2rem;
-    --spacing-2: 0.5rem;
-    --spacing-3: 0.5rem;
-  }
-
-  .name-email-group {
-    flex-direction: column;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 15px;
   height: 15px;
@@ -212,6 +200,9 @@ section a:not(.card):hover {
 .overview .logo-wrapper .logo {
   width: 100%;
 }
+.overview .logo-wrapper .logo .logo-letters path {
+  fill: var(--heading-color);
+}
 
 .overview .acronym-explainer {
   font-size: 1.25rem;
@@ -272,6 +263,10 @@ section a:not(.card):hover {
 }
 .citations li {
   padding-left: 1ch;
+}
+/* break long links in citation */
+.citations a {
+  word-break: break-all;
 }
 
 .card {
@@ -517,4 +512,22 @@ form {
   color: var(--text-faded-color);
   font-size: 0.85rem;
   padding: 0 16px;
+}
+
+@media (max-width: 850px) {
+  :root {
+    --spacing: 1.5rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.5rem;
+  }
+
+  .name-email-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 696px) {
+  .card.gradient-card .icon-wrapper {
+    display: none;
+  }
 }
