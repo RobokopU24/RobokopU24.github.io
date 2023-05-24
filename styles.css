@@ -116,7 +116,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: auto [divider-start] 1px [divider-end content-start] minmax(min-content, 850px) [content-end] auto;
-  grid-template-rows: 10vh repeat(6, 1px min-content) auto;
+  grid-template-rows: 10vh repeat(7, 1px min-content) auto;
 }
 
 .divider {
@@ -151,6 +151,9 @@ main {
 .divider.horiz:nth-of-type(7) {
   grid-row: 12 / span 1; 
 }
+.divider.horiz:nth-of-type(8) {
+  grid-row: 14 / span 1; 
+}
 
 section {
   padding: var(--spacing);
@@ -173,6 +176,9 @@ section:nth-of-type(5) {
 }
 section:nth-of-type(6) {
   grid-row: 13 / span 1;
+}
+section:nth-of-type(7) {
+  grid-row: 15 / span 1;
 }
 
 nav {
