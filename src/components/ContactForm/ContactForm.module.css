@@ -65,3 +65,10 @@
     flex-direction: column;
   }
 }
+
+.responseMessage {
+  background-color: var(--form-response-background-color);
+  padding: 16px 16px;
+  border-left: 3px solid var(--form-response-border-color);
+  border-radius: 0 10px 10px 0;
+}

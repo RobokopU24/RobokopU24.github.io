@@ -1,3 +1,4 @@
+import { RecaptchaProvider } from '@/providers/recaptcha-context';
 import './global.css'
 import { Roboto } from "next/font/google";
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <RecaptchaProvider publicKey='6LcMQR4lAAAAAB5Ilnu7XYiXyb3uY7mHh44fhBk0'>
+        <body className={roboto.className}>{children}</body>
+      </RecaptchaProvider>
     </html>
   );
 }
