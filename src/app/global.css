@@ -132,6 +132,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 img,
 picture,
 video,
