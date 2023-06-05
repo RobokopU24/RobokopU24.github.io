@@ -1,0 +1,26 @@
+name: "Push to Github Container Registry"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    name: Push ROBOKOP landing page to GHCR.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+      - name: Push landing page
+        uses: docker/build-push-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          path: .
+          dockerfile: ./Dockerfile
+          repository: robokopu24/robokopu24.github.io
+          tags: latest,${{ steps.get_version.outputs.VERSION }}
