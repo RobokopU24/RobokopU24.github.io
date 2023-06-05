@@ -32,7 +32,6 @@ export default function Home() {
           <Card
             title="Ask a Question"
             href="https://qgraph.renci.org/question"
-            target="_blank"
             icon={<QueryIcon />}
             gradient="blue"
           >
@@ -40,8 +39,7 @@ export default function Home() {
           </Card>
           <Card
             title="Explore the Data"
-            href="https://qgraph.renci.org/question"
-            target="_blank"
+            href="https://robokop.renci.org/api-docs"
             icon={<DataIcon />}
             gradient="purple"
           >
