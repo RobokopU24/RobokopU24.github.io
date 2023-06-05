@@ -1,6 +1,7 @@
 import { type HTMLAttributeAnchorTarget } from 'react';
 import { ExternalLinkIcon } from '../icons/ExternalLinkIcon/ExternalLinkIcon';
 import styles from './Card.module.css';
+import { InternalLinkIcon } from '../icons/InternalLinkIcon/InternalLinkIcon';
 
 interface CardProps {
   children: React.ReactNode;
@@ -29,7 +30,11 @@ export const Card = ({ children, title, href, target, icon, gradient, warning }:
 
         <div className={`${styles.cardHeader} ${icon ? styles.iconCardHeader : ''}`}>
           <h2 className={styles.title}>{title}</h2>
-          <ExternalLinkIcon color={gradient ? 'white' : undefined} />
+          {
+            target === "_blank" ?
+              <ExternalLinkIcon color={gradient ? 'white' : undefined} />
+              : <InternalLinkIcon color={gradient ? 'white' : undefined} />
+          }
         </div>
 
         {!icon && <hr />}
