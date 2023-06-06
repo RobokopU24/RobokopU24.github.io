@@ -30,11 +30,15 @@ export const useRecaptchaContext = () => {
 };
 
 interface RecaptchaProviderProps {
-  publicKey: string;
+  publicKey?: string;
   children: React.ReactNode;
 }
 
 export const RecaptchaProvider = ({ publicKey, children }: RecaptchaProviderProps) => {
+  if (!publicKey) {
+    throw new Error("RecaptchaProvider missing public key");
+  }
+
   const [execute, setExecute] = useState<((action: string) => Promise<string>) | null>(null);
 
   const onScriptLoad = () => {

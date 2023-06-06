@@ -26,8 +26,10 @@ docker run --rm -p 80:3000 containers.renci.org/translator/landing-page:2.0.0
 
 ## Kubernetes Deploy
 
-First, ensure the image is in the RENCI registry
+The site is built by a Github Action script on each new release, and pushed to the Github Container Registry at:
 
-```bash
-docker push containers.renci.org/translator/landing-page:2.0.0
-```
+[ghcr.io/robokopu24/robokopu24.github.io](https://ghcr.io/robokopu24/robokopu24.github.io)
+
+### Environment Variables
+
+Ensure that the `NEXT_PUBLIC_RECAPTCHA_KEY` is set. For development, create a `.env.local`

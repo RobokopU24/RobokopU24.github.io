@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <RecaptchaProvider publicKey='6LcMQR4lAAAAAB5Ilnu7XYiXyb3uY7mHh44fhBk0'>
+      <RecaptchaProvider publicKey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}>
         <body className={roboto.className}>{children}</body>
       </RecaptchaProvider>
     </html>
