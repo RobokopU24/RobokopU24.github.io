@@ -8,6 +8,9 @@ export const metadata = {
   title: "ROBOKOP",
   description:
     "ROBOKOP is an open-source biomedical knowledge graph that integrates and semantically harmonizes important knowledge sources.",
+  openGraph: {
+    images: '/opengraph-image.png'
+  }
 };
 
 export default function RootLayout({
