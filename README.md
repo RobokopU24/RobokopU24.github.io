@@ -32,4 +32,4 @@ The site is built by a Github Action script on each new release, and pushed to t
 
 ### Environment Variables
 
-Ensure that the `NEXT_PUBLIC_RECAPTCHA_KEY` is set. For development, create a `.env.local`
+Ensure that the `NEXT_PUBLIC_RECAPTCHA_KEY` is set.
