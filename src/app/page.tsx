@@ -31,7 +31,7 @@ export default function Home() {
         <CardContainer>
           <Card
             title="Ask a Question"
-            href="https://qgraph.renci.org/question"
+            href="/question-builder"
             icon={<QueryIcon />}
             gradient="blue"
           >
@@ -39,7 +39,7 @@ export default function Home() {
           </Card>
           <Card
             title="Explore the Data"
-            href="https://robokop.renci.org/api-docs"
+            href="/api-docs"
             icon={<DataIcon />}
             gradient="purple"
           >
