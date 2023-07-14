@@ -22,5 +22,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           path: .
           dockerfile: ./Dockerfile
-          repository: robokopu24/robokopu24.github.io
+          repository: robokopu24/landing-page
           tags: latest,${{ steps.get_version.outputs.VERSION }}
