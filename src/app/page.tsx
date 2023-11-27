@@ -64,6 +64,13 @@ export default function Home() {
           >
             <p>ExEmplar is a generic Neo4j query-and-answer exploration tool that supports queries of the ROBOKOP KG and other Neo4j databases.</p>
           </Card>
+          <Card
+            title="RoboDocumentation"
+            href="https://github.com/RobokopU24/RoboDocumentation/"
+            target="_blank"
+          >
+            <p>A collection of notebooks and other documents to help users get the most out of ROBOKOP.</p>
+          </Card>
         </CardContainer>
       </Section>
       <Section title="Citations" index={2}>
