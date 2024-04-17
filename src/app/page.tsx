@@ -60,9 +60,9 @@ export default function Home() {
             title="ExEmPLAR"
             href="https://www.exemplar.mml.unc.edu/"
             target="_blank"
-            warning="ExEmplar is under development and should be considered an experimental alternative to the ROBOKOP UI."
+            warning="ExEmPLAR is under development and should be considered an experimental alternative to the ROBOKOP UI."
           >
-            <p>ExEmplar is a generic Neo4j query-and-answer exploration tool that supports queries of the ROBOKOP KG and other Neo4j databases.</p>
+            <p>ExEmPLAR is a generic Neo4j query-and-answer exploration tool that supports queries of the ROBOKOP KG and other Neo4j databases.</p>
           </Card>
           <Card
             title="RoboDocumentation"
