@@ -24,5 +24,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           path: .
           dockerfile: ./Dockerfile
-          repository: RENCI/aixb-landing-page
+          repository: renci/aixb-landing-page
           tags: latest,${{ steps.get_version.outputs.VERSION }}
