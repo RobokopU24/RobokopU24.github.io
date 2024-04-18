@@ -1,4 +1,4 @@
-# ROBOKOP Landing Page
+# AIxB Landing Page
 
 ## Kubernetes Deploy
 
