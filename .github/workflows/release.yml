@@ -25,4 +25,4 @@ jobs:
           path: .
           dockerfile: ./Dockerfile
           repository: renci/aixb-landing-page
-          tags: latest,${{ steps.get_version.outputs.VERSION }}
+          tags: latest
