@@ -69,9 +69,9 @@ export default function Home() {
 
         </div>
       </Section>
-      {/* <Section title="Contact" index={6}>
+      <Section title="Contact" index={6}>
         <ContactForm />
-      </Section> */}
+      </Section>
     </MainGrid>
   );
 }

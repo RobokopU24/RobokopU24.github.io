@@ -1,4 +1,4 @@
-// import { RecaptchaProvider } from '@/providers/recaptcha-context';
+import { RecaptchaProvider } from '@/providers/recaptcha-context';
 import './global.css'
 import { Roboto } from "next/font/google";
 
@@ -21,9 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <RecaptchaProvider publicKey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}> */}
+      <RecaptchaProvider publicKey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}>
         <body className={roboto.className}>{children}</body>
-      {/* </RecaptchaProvider> */}
+      </RecaptchaProvider>
     </html>
   );
 }
