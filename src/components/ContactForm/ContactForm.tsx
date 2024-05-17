@@ -9,7 +9,7 @@ import { Input } from './Input';
 import { TextArea } from './TextArea';
 import { useEffect, useState } from 'react';
 
-const GOOGLE_APPS_SCRIPT_LINK = "https://script.google.com/macros/s/AKfycbwIBuJuogIRNXLOD2x6MwzoGXflnVIrDbvwCyfzJujQUKp9TEGE--79Kp_HVB9Wf7da-w/exec";
+const GOOGLE_APPS_SCRIPT_LINK = "https://script.google.com/a/macros/renci.org/s/AKfycbyS1Z_a3zgB9rfyD_gqUCKCmDNMxk04uOzZalv3M5Fmo-OTxaukKQu5G0CZ5DzLVQF4/exec";
 
 export interface IForm {
   Name: string;
