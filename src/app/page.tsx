@@ -13,13 +13,13 @@ import { QueryIcon } from "@/components/icons/QueryIcon";
 
 export default function Home() {
   return (
-    <MainGrid numberOfRows={4}>
+    <MainGrid numberOfRows={5}>
       <Navigation sections={[
         "Overview",
         "Additional Tools",
         "Funding",
         "License",
-        // "Contact",
+        "More Information",
       ]} />
 
       <Section title="Overview" hideTitle index={0}>
@@ -69,7 +69,7 @@ export default function Home() {
 
         </div>
       </Section>
-      <Section title="Contact" index={6}>
+      <Section title="More Information" index={6}>
         <ContactForm />
       </Section>
     </MainGrid>
