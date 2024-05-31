@@ -5,13 +5,10 @@ import { Roboto } from "next/font/google";
 const roboto = Roboto({ weight: ["300", "400", "700"], subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: 'https://robokop.renci.org',
-  title: "ROBOKOP",
+  metadataBase: 'https://aixb.renci.org',
+  title: "AIxB",
   description:
-    "ROBOKOP is an open-source biomedical knowledge graph that integrates and semantically harmonizes important knowledge sources.",
-  openGraph: {
-    images: '/opengraph-image.png'
-  }
+    "AIxB is building a collaborative ecosystem for innovation in Artificial Intelligence and the Biological Science.",
 };
 
 export default function RootLayout({
