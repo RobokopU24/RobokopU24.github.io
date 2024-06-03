@@ -10,12 +10,12 @@ import { TextArea } from './TextArea';
 import { useEffect, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form'
 
-const GOOGLE_APPS_SCRIPT_LINK = "https://script.google.com/a/macros/renci.org/s/AKfycbyS1Z_a3zgB9rfyD_gqUCKCmDNMxk04uOzZalv3M5Fmo-OTxaukKQu5G0CZ5DzLVQF4/exec";
+const GOOGLE_APPS_SCRIPT_LINK = "https://script.google.com/macros/s/AKfycbwvp6AdbR2sFC0QwFowH4V-91k_Kfr_eg9x-gBS2---rP_q-nKw7e8-pwqcKaxJDPss/exec";
 
 export interface IForm {
   Name: string;
   Email: string;
-  Subject: string;
+  Options: string;
   Message: string;
 }
 
@@ -90,7 +90,7 @@ export const ContactForm = () => {
         </div>
 
         <Input
-          label='Subject'
+          label='Options'
           required
           type='select'
           register={register}
