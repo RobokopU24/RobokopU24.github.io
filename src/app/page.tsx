@@ -16,7 +16,7 @@ export default function Home() {
     <MainGrid numberOfRows={5}>
       <Navigation sections={[
         "Overview",
-        "Additional Tools",
+        "Tools",
         "Funding",
         "License",
         "More Information",
@@ -30,7 +30,7 @@ export default function Home() {
         <AcronymTagline />
         <OverviewSummary />
       </Section>
-      <Section title="Additional Tools" index={1}>
+      <Section title="Tools" index={1}>
         <CardContainer>
           <Card
             title="ROBOKOP KG"
