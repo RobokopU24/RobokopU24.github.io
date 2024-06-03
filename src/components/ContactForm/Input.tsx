@@ -22,12 +22,21 @@ export const Input = ({
   return (
     <div className={styles.inputGroup}>
       <label htmlFor={toKebabCase(label)}>{label}</label>
-      <input
-        {...register(label, { validate, required })}
-        type={type}
-        name={label}
-        id={toKebabCase(label)}
-      />
+      {type === "select" ? (
+        <select>
+          <option>I have a question</option>
+          <option>How can I get involved?</option>
+          <option>I'd like to report a website issue</option>
+          <option>General inquiry</option>
+        </select>
+      ): (
+        <input
+          {...register(label, { validate, required })}
+          type={type}
+          name={label}
+          id={toKebabCase(label)}
+        />
+      )}
     </div>
   )
 }
