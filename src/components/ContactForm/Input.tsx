@@ -26,7 +26,7 @@ export const Input = ({
         <select>
           <option>I have a question</option>
           <option>How can I get involved?</option>
-          <option>I'd like to report a website issue</option>
+          <option>I&apos;d like to report a website issue</option>
           <option>General inquiry</option>
         </select>
       ): (
