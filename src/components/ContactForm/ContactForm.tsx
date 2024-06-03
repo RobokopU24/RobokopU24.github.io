@@ -8,6 +8,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { Input } from './Input';
 import { TextArea } from './TextArea';
 import { useEffect, useState } from 'react';
+import { Controller, useFormContext } from 'react-hook-form'
 
 const GOOGLE_APPS_SCRIPT_LINK = "https://script.google.com/a/macros/renci.org/s/AKfycbyS1Z_a3zgB9rfyD_gqUCKCmDNMxk04uOzZalv3M5Fmo-OTxaukKQu5G0CZ5DzLVQF4/exec";
 
@@ -91,7 +92,7 @@ export const ContactForm = () => {
         <Input
           label='Subject'
           required
-          type='text'
+          type='select'
           register={register}
         />
 
