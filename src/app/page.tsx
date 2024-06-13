@@ -1,5 +1,7 @@
 "use client"
 
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { AcronymTagline } from "@/components/AcronymTagline/AcronymTagline";
 import { Card } from "@/components/Card/Card";
 import { CardContainer } from "@/components/CardContainer/CardContainer";
@@ -18,8 +20,11 @@ interface tools {
   [key: string]: any;
 }
 
+interface Props {
+  fundingSource: MDXRemoteSerializeResult;
+}
 
-export default function Home() {
+export default async function Home({ fundingSource }: Props) {
   return (
     <MainGrid numberOfRows={6}>
       <Navigation sections={[
@@ -59,6 +64,7 @@ export default function Home() {
         </ul>
       </Section>
       <Section title="Funding" index={3}>
+      <MDXRemote {...fundingSource} />
         <p>
           ROBOKOP is a joint creation of the <a href="https://renci.org" target="_blank">Renaissance Computing Institute (RENCI)</a> at the <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill</a> and <a href="https://covar.com/" target="_blank">CoVar LLC</a>. The prototype was developed with funding from the <a href="https://ncats.nih.gov/" target="_blank">National Center for Advancing Translational Sciences</a>, <a href="https://www.nih.gov/" target="_blank">National Institutes of Health</a> (award <a href="https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=OT2TR002514&arg_ProgOfficeCode=264" target="_blank">#OT2TR002514</a>). ROBOKOP&apos;s continued development is supported with joint funding from the <a href="https://reporter.nih.gov/search/ALIFnrPqJU6PEtxDUvY9EA/project-details/10697371?" target="_blank">National Institute of Environmental Health Sciences</a> and the <a href="https://datascience.nih.gov/about/odss" target="_blank">Office of Data Science Strategy</a> within the <a href="https://www.nih.gov/" target="_blank">National Institutes of Health</a> (award <a href="https://tools.niehs.nih.gov/portfolio/index.cfm?do=portfolio.grantDetail&grant_number=U24ES035214" target="_blank">#U24ES035214</a>).
         </p>
@@ -76,4 +82,17 @@ export default function Home() {
       </Section>
     </MainGrid>
   );
+}
+
+
+export async function getData() {
+  const fundingMdx = (await import('../content/funding.mdx'));
+
+  const fundingSource = await serialize(fundingMdx);
+
+  return {
+    props: {
+      fundingSource,
+    },
+  };
 }
