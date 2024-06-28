@@ -1,21 +1,5 @@
 # AIxB Landing Page
 
-## Kubernetes Deploy
+## Content Management
 
-The site is built by a Github Action script on each new release, and pushed to the Github Container Registry at:
-
-[ghcr.io/robokopu24/landing-page](https://ghcr.io/robokopu24/landing-page)
-
-Update the helm chart in [translator-devops](https://github.com/helxplatform/translator-devops), `/helm/frontend-umbrella/charts/landing-page/values.yaml` with the new release tag.
-
-> **Note**
-> As of 7/14/23, this is on the `robokop-u24` branch in `translator-devops`
-
-Then upgrade the deployment with Helm:
-```bash
-helm upgrade robokop-frontend helm/frontend-umbrella -n robokop-u24
-```
-
-### Environment Variables
-
-Ensure that the `NEXT_PUBLIC_RECAPTCHA_KEY` is set.
+The content directory houses all of the content for the landing page, with each file corresponding to a section. The content is formatted using mdx, and utilizes [markdown formatting](https://www.markdownguide.org/basic-syntax/). To update, add, or remove content, branch off of the `main` branch and name your branch `content/[date]` . When all your content has been updated, create a Pull Request to merge your content branch into main. If there is a time-sensitive update needed, please note this timeline or deadline in your PR description. Request one of the following people [Suejin Kim, Matt Watson, or David Glymph] as a reviewer. One of these team members will review the content to ensure the formatting is compatible and error-free, and will merge the content after reviewing.
