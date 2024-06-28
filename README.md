@@ -2,4 +2,20 @@
 
 ## Content Management
 
-The content directory houses all of the content for the landing page, with each file corresponding to a section. The content is formatted using mdx, and utilizes [markdown formatting](https://www.markdownguide.org/basic-syntax/). To update, add, or remove content, branch off of the `main` branch and name your branch `content/[date]` . When all your content has been updated, create a Pull Request to merge your content branch into main. If there is a time-sensitive update needed, please note this timeline or deadline in your PR description. Request one of the following people [Suejin Kim, Matt Watson, or David Glymph] as a reviewer. One of these team members will review the content to ensure the formatting is compatible and error-free, and will merge the content after reviewing.
+Content for this site is located in the src directory in a content folder. The content is formatted using mdx, and utilizes [markdown formatting](https://www.markdownguide.org/basic-syntax/). 
+
+.
+└── src
+    ├── content
+        ├── about.mdx
+        ├── funding.mdx
+        ├── license.mdx
+        ├── resources.mdx
+        └── tools.mdx
+
+To update the content, navigate on the github UI to the file you'd like to change. Find the edit icon (pencil) and edit the text directly in the text editor. When you're changes are complete, click the "Commit changes ... " button. This will open a dialog box that wil prompt you to write a commit message, optional description, email address, and the option to choose one of the following options:
+
+ - Commit directly to the `main` branch
+ - Create a **new branch** for this commit and start a pull request
+
+Please select the second option (Create a new branch for this commit and start a pull request). Our team will be notified of the pull request and will review and merge the requested changes.
