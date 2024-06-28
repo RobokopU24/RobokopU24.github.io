@@ -44,6 +44,7 @@ export default function Home() {
         <CardContainer>
           {tools.map((tool)=>(
             <Card
+              key={tool.title}
               title={tool.title}
               href={tool.link}
               warning={tool.warning}
