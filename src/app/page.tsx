@@ -14,6 +14,7 @@ import Resources from '../content/resources.mdx'
 import { tools } from '../content/tools.mdx'
 import Funding from '../content/funding.mdx'
 import License from '../content/license.mdx'
+import Events from '../content/events.mdx'
 
 interface tools {
   [key: string]: any;
@@ -21,10 +22,12 @@ interface tools {
 
 
 export default function Home() {
+
   return (
-    <MainGrid numberOfRows={6}>
+    <MainGrid numberOfRows={7}>
       <Navigation sections={[
         "Overview",
+        "Events",
         "Tools",
         "Resources",
         "Funding",
@@ -40,7 +43,10 @@ export default function Home() {
         <AcronymTagline />
         <OverviewSummary />
       </Section>
-      <Section title="Tools" index={1}>
+      <Section title="Events" index={1}>
+        <Events />
+      </Section>
+      <Section title="Tools" index={2}>
         <CardContainer>
           {tools.map((tool)=>(
             <Card
@@ -55,19 +61,19 @@ export default function Home() {
           ))}
         </CardContainer>
       </Section>
-      <Section title="Resources" index={2}>
+      <Section title="Resources" index={3}>
         <Resources />
       </Section>
-      <Section title="Funding" index={3}>
+      <Section title="Funding" index={4}>
         <Funding />
       </Section>
-      <Section title="License" index={4}>
+      <Section title="License" index={5}>
         <License />
         <div style={{height: '300px'}}>
 
         </div>
       </Section>
-      <Section title="More Information" index={5}>
+      <Section title="More Information" index={6}>
         <ContactForm />
       </Section>
     </MainGrid>
