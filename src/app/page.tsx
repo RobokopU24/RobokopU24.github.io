@@ -16,10 +16,12 @@ import Funding from '../content/funding.mdx'
 import License from '../content/license.mdx'
 import Events from '../content/events.mdx'
 
-interface tools {
-  [key: string]: any;
+interface Tool {
+  title: string;
+  link: string;
+  description: string;
+  warning?: string;
 }
-
 
 export default function Home() {
 
@@ -48,7 +50,7 @@ export default function Home() {
       </Section>
       <Section title="Tools" index={2}>
         <CardContainer>
-          {tools.map((tool)=>(
+          {tools.map((tool: Tool, index: number) => (
             <Card
               key={tool.title}
               title={tool.title}
