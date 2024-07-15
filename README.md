@@ -15,7 +15,7 @@ Content for this site is located in the src directory in a content folder. The c
         └── tools.mdx
 ```
 
-To update the content, ensure you are on the `content` branch via the dropdown menu.
+To update the content, ensure you are on the `content` branch via the dropdown menu, or, click this [link]([https://github.com/RENCI/aixb-landing-page/tree/content](https://github.com/RENCI/aixb-landing-page/tree/content/src)).
 
 ![Screenshot 2024-07-15 at 11 51 43 AM](https://github.com/user-attachments/assets/7080604f-673a-4f5a-a5e0-db6815079d45)
 
