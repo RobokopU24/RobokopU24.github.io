@@ -16,7 +16,7 @@ import Funding from '../content/funding.mdx'
 import License from '../content/license.mdx'
 import Events from '../content/events.mdx'
 
-interface Tools {
+interface Tool {
   title: string;
   link: string;
   description: string;
