@@ -10,3 +10,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ...components,
   }
 }
+
+declare module '*.mdx' {
+  // This is the export key for the frontmatter (defined in the next.config.mjs file)
+  // If the shape of the frontmatter gets more complex, we can define a better type
+  // here or use a runtime validator like zod.
+  export const frontmatter: any;
+}
