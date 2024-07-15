@@ -11,7 +11,7 @@ import { Section } from "@/components/Section/Section";
 import { DataIcon } from "@/components/icons/DataIcon";
 import { QueryIcon } from "@/components/icons/QueryIcon";
 import Resources from '../content/resources.mdx'
-import Tools from '../content/tools.mdx'
+import { frontmatter as tools } from '../content/tools.mdx'
 import Funding from '../content/funding.mdx'
 import License from '../content/license.mdx'
 import Events from '../content/events.mdx'
