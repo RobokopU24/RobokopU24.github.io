@@ -60,9 +60,9 @@ export default function Home() {
             title="ExEmPLAR"
             href="https://www.exemplar.mml.unc.edu/"
             target="_blank"
-            warning="ExEmPLAR is under development and should be considered an experimental alternative to the ROBOKOP UI."
+            warning="ExEmPLAR is not a formal component of ROBOKOP and should be considered an experimental alternative to the ROBOKOP UI."
           >
-            <p>ExEmPLAR is a generic Neo4j query-and-answer exploration tool that supports queries of the ROBOKOP KG and other Neo4j databases.</p>
+            <p>The Extracting, Exploring and Embedding Pathways Leading to Actionable Research (ExEmPLAR) application is an experimental, generic Neo4J question-and-answer browser tool that supports queries of the ROBOKOP KG and other Neo4J databases.</p>
           </Card>
           <Card
             title="RoboDocumentation"
@@ -87,7 +87,17 @@ export default function Home() {
       </Section>
       <Section title="License" index={4}>
         <p>
-          ROBOKOP is available under the <a href="https://opensource.org/license/mit/" target="_blank">MIT license</a>.
+          The ROBOKOP system and the ROBOKOP knowledge graph &quot;KG&quot; are governed under an open-source
+          <a href="https://opensource.org/license/mit/" target="_blank">MIT License</a>.
+          Both resources make use of open-source primary data sources. While we make every effort to ensure that
+          those sources can be freely ingested and redistributed, we encourage users to review and comply with the 
+          specific license terms applicable to each source. Furthermore, copyright remains with the respective originators,
+          contributors, and maintainers of the primary data sources. This resource does not claim ownership of such
+          intellectual property unless explicitly stated. The open-source ROBOKOP system, including the ROBOKOP KG,
+          is provided &quot;as is,&quot; without warranties or guarantees of any kind. The creators, maintainers, 
+          and distributors of the original primary data sources and derivative works disclaim any liability for errors, 
+          omissions, or misuse of the data. Users assume all responsibility for ensuring that the data sources are 
+          suitable for their specific applications and comply with all applicable legal and ethical guidelines.
         </p>
       </Section>
       <Section title="Events" index={5}>
