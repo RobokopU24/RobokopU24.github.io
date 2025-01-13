@@ -87,8 +87,7 @@ export default function Home() {
       </Section>
       <Section title="License" index={4}>
         <p>
-          The ROBOKOP system and the ROBOKOP knowledge graph &quot;KG&quot; are governed under an open-source
-          <a href="https://opensource.org/license/mit/" target="_blank">MIT License</a>.
+          The ROBOKOP system and the ROBOKOP knowledge graph &quot;KG&quot; are governed under an open-source <a href="https://opensource.org/license/mit/" target="_blank">MIT License</a>.
           Both resources make use of open-source primary data sources. While we make every effort to ensure that
           those sources can be freely ingested and redistributed, we encourage users to review and comply with the 
           specific license terms applicable to each source. Furthermore, copyright remains with the respective originators,
