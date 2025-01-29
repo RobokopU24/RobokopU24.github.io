@@ -60,7 +60,7 @@ export default function Home() {
             title="ExEmPLAR"
             href="https://www.exemplar.mml.unc.edu/"
             target="_blank"
-            warning="ExEmPLAR is not a formal component of ROBOKOP and should be considered an experimental alternative to the ROBOKOP UI."
+            warning="ExEmPLAR is not a formal component of ROBOKOP but rather an experimental tool that supports queries of the ROBOKOP KG."
           >
             <p>The Extracting, Exploring and Embedding Pathways Leading to Actionable Research (ExEmPLAR) application is an experimental, generic Neo4J question-and-answer browser tool that supports queries of the ROBOKOP KG and other Neo4J databases.</p>
           </Card>
