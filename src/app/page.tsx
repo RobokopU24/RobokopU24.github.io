@@ -62,7 +62,7 @@ export default function Home() {
             target="_blank"
             warning="ExEmPLAR is not a formal component of ROBOKOP but rather an experimental tool that supports queries of the ROBOKOP KG."
           >
-            <p>The Extracting, Exploring and Embedding Pathways Leading to Actionable Research (ExEmPLAR) application is an experimental, generic Neo4J question-and-answer browser tool that supports queries of the ROBOKOP KG and other Neo4J databases.</p>
+            <p>The Extracting, Exploring and Embedding Pathways Leading to Actionable Research (ExEmPLAR) application is an experimental, generic Neo4j question-and-answer browser tool that supports queries of the ROBOKOP KG and other Neo4j databases.</p>
           </Card>
           <Card
             title="RoboDocumentation"
